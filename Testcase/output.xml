@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-02-04T14:27:45.327384" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase" source="C:\Users\UsEr\Documents\GitHub\Nawaphon_automation\Testcase\Testcase.robot">
+<test id="s1-t1" name="TC01" line="6">
+<kw name="Open doppy" owner="Common">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-02-04T14:27:45.490603" level="INFO">Opening browser 'Chrome' to base url 'https://training-platform.doppio-tech.com/'.</msg>
+<arg>https://training-platform.doppio-tech.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-02-04T14:27:45.490603" elapsed="1.951574"/>
+</kw>
+<status status="PASS" start="2025-02-04T14:27:45.490603" elapsed="1.952577"/>
+</kw>
+<kw name="Go to Register Menu" owner="Common">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-04T14:27:47.443180" level="INFO">Clicking element 'xpath=//div[@id='app']//span[@class='anticon anticon-user icon-size']'.</msg>
+<arg>${human_icon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-04T14:27:47.443180" elapsed="0.071878"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${signin_signup_btn}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-04T14:27:47.516265" elapsed="0.013673"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-04T14:27:47.529938" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-default button-login']'.</msg>
+<arg>${signin_signup_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-04T14:27:47.529938" elapsed="0.070297"/>
+</kw>
+<status status="PASS" start="2025-02-04T14:27:47.443180" elapsed="0.157055"/>
+</kw>
+<kw name="Register account" owner="Common">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${signup_signup_btn}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-04T14:27:47.600235" elapsed="0.012588"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-04T14:27:47.612823" level="INFO">Typing text 'Testingdoppio2@doppio.com' into text field 'xpath=//input[@id='basic_username']'.</msg>
+<arg>${signup_email_input}</arg>
+<arg>Testingdoppio2@doppio.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-04T14:27:47.612823" elapsed="0.083726"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-04T14:27:47.696549" level="INFO">Typing text 'P@ssw0rd1234' into text field 'xpath=//input[@id='basic_password']'.</msg>
+<arg>${signup_password_input}</arg>
+<arg>P@ssw0rd1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-04T14:27:47.696549" elapsed="0.059594"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-04T14:27:47.756143" level="INFO">Typing text 'P@ssw0rd1234' into text field 'xpath=//input[@id='basic_confirmPassword']'.</msg>
+<arg>${signup_confirm_password_input}</arg>
+<arg>P@ssw0rd1234</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-04T14:27:47.756143" elapsed="0.058587"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-04T14:27:47.816108" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-primary button-login']'.</msg>
+<arg>${signup_signup_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-04T14:27:47.816108" elapsed="0.037437"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${signup_signup_successfully}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-02-04T14:27:47.853545" elapsed="0.214266"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-04T14:27:48.067811" level="INFO">Clicking element 'xpath=//button[@class = 'css-eq3tly ant-btn ant-btn-primary']'.</msg>
+<arg>${signup_signup_successfully_ok}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-04T14:27:48.067811" elapsed="0.036498"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Register success!!</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-02-04T14:27:48.104309" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2025-02-04T14:27:47.600235" elapsed="0.505074"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-04T14:27:53.105329" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-04T14:27:48.105309" elapsed="5.000020"/>
+</kw>
+<status status="PASS" start="2025-02-04T14:27:45.489604" elapsed="7.615725"/>
+</test>
+<status status="PASS" start="2025-02-04T14:27:45.328390" elapsed="7.777978"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testcase" id="s1" pass="1" fail="0" skip="0">Testcase</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-02-04T14:27:45.487606" level="ERROR">Error in file 'C:\Users\UsEr\Documents\GitHub\Nawaphon_automation\import.robot' on line 3: Importing library 'Yaml' failed: ModuleNotFoundError: No module named 'Yaml'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\UsEr\AppData\Local\Programs\Python\Python312\Scripts\robot.exe
+  C:\Users\UsEr\AppData\Local\Programs\Python\Python312\python312.zip
+  C:\Users\UsEr\AppData\Local\Programs\Python\Python312\DLLs
+  C:\Users\UsEr\AppData\Local\Programs\Python\Python312\Lib
+  C:\Users\UsEr\AppData\Local\Programs\Python\Python312
+  C:\Users\UsEr\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
+</errors>
+</robot>
