@@ -1,194 +1,427 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-02-05T11:43:29.003418" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2 (Python 3.12.8 on win32)" generated="2025-02-05T14:35:58.304411" rpa="false" schemaversion="5">
 <suite id="s1" name="Testcase" source="C:\Users\UsEr\Documents\GitHub\Nawaphon_automation\Testcase\Testcase.robot">
 <test id="s1-t1" name="TC01" line="12">
 <kw name="Open doppy" owner="Common" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-02-05T11:43:29.168394" level="INFO">Opening browser 'Chrome' to base url 'https://training-platform.doppio-tech.com/'.</msg>
+<msg time="2025-02-05T14:35:58.479117" level="INFO">Opening browser 'Chrome' to base url 'https://training-platform.doppio-tech.com/'.</msg>
 <arg>https://training-platform.doppio-tech.com/</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-02-05T11:43:29.168394" elapsed="1.811397"/>
+<status status="PASS" start="2025-02-05T14:35:58.479117" elapsed="1.941148"/>
 </kw>
-<status status="PASS" start="2025-02-05T11:43:29.167393" elapsed="1.812398"/>
+<status status="PASS" start="2025-02-05T14:35:58.478097" elapsed="1.942168"/>
 </kw>
 <kw name="Random Integer with Python" owner="Common">
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2025-02-05T11:43:30.979791" level="INFO">${random_integer} = 419</msg>
+<msg time="2025-02-05T14:36:00.421265" level="INFO">${random_integer} = 428</msg>
 <var>${random_integer}</var>
 <arg>random.randint(100, 999)</arg>
 <arg>modules=random</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2025-02-05T11:43:30.979791" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-05T14:36:00.421265" elapsed="0.000000"/>
 </kw>
 <return>
 <value>${random_integer}</value>
-<status status="PASS" start="2025-02-05T11:43:30.979791" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-05T14:36:00.421265" elapsed="0.000000"/>
 </return>
-<msg time="2025-02-05T11:43:30.981081" level="INFO">${random_integer} = 419</msg>
+<msg time="2025-02-05T14:36:00.421265" level="INFO">${random_integer} = 428</msg>
 <var>${random_integer}</var>
-<status status="PASS" start="2025-02-05T11:43:30.979791" elapsed="0.001290"/>
+<status status="PASS" start="2025-02-05T14:36:00.421265" elapsed="0.000000"/>
 </kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>return random number success ${random_integer}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-02-05T11:43:30.981081" elapsed="0.000000"/>
-</kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-05T11:43:40.981513" level="INFO">Slept 10 seconds.</msg>
-<arg>10s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-05T11:43:30.981081" elapsed="10.000432"/>
-</kw>
+<kw name="Register account" owner="Register">
 <kw name="Go to Register Menu" owner="Register">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-05T11:43:40.981513" level="INFO">Clicking element 'xpath=//div[@id='app']//span[@class='anticon anticon-user icon-size']'.</msg>
+<msg time="2025-02-05T14:36:00.422565" level="INFO">Clicking element 'xpath=//div[@id='app']//span[@class='anticon anticon-user icon-size']'.</msg>
 <arg>${human_icon}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-05T11:43:40.981513" elapsed="0.066122"/>
+<status status="PASS" start="2025-02-05T14:36:00.421265" elapsed="0.071545"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${signin_signup_btn}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-05T11:43:41.047635" elapsed="0.016401"/>
+<status status="PASS" start="2025-02-05T14:36:00.492810" elapsed="0.012959"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-05T11:43:41.064036" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-default button-login']'.</msg>
+<msg time="2025-02-05T14:36:00.505769" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-default button-login']'.</msg>
 <arg>${signin_signup_btn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-05T11:43:41.064036" elapsed="0.054253"/>
+<status status="PASS" start="2025-02-05T14:36:00.505769" elapsed="0.061655"/>
 </kw>
-<status status="PASS" start="2025-02-05T11:43:40.981513" elapsed="0.136776"/>
+<status status="PASS" start="2025-02-05T14:36:00.421265" elapsed="0.146159"/>
 </kw>
-<kw name="Register account" owner="Register">
+<kw name="Register section" owner="Register">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2025-02-05T14:36:00.567424" level="INFO">${username} = NawaphonDoppio428@doppio.com</msg>
+<var>${username}</var>
+<arg>NawaphonDoppio${random_integer}@doppio.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2025-02-05T14:36:00.567424" elapsed="0.000000"/>
+</kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${signup_signup_btn}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-05T11:43:41.119795" elapsed="0.010711"/>
+<status status="PASS" start="2025-02-05T14:36:00.567424" elapsed="0.013939"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-05T11:43:41.131505" level="INFO">Typing text 'NawaphonDoppio419@doppio.com' into text field 'xpath=//input[@id='basic_username']'.</msg>
+<msg time="2025-02-05T14:36:00.581363" level="INFO">Typing text 'NawaphonDoppio428@doppio.com' into text field 'xpath=//input[@id='basic_username']'.</msg>
 <arg>${signup_email_input}</arg>
-<arg>NawaphonDoppio${random_integer}@doppio.com</arg>
+<arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-05T11:43:41.131505" elapsed="0.085216"/>
+<status status="PASS" start="2025-02-05T14:36:00.581363" elapsed="0.089817"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-05T11:43:41.216721" level="INFO">Typing text 'P@ssw0rd1234' into text field 'xpath=//input[@id='basic_password']'.</msg>
+<msg time="2025-02-05T14:36:00.671180" level="INFO">Typing text 'P@ssw0rd1234' into text field 'xpath=//input[@id='basic_password']'.</msg>
 <arg>${signup_password_input}</arg>
 <arg>P@ssw0rd1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-05T11:43:41.216721" elapsed="0.057927"/>
+<status status="PASS" start="2025-02-05T14:36:00.671180" elapsed="0.058834"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-05T11:43:41.275699" level="INFO">Typing text 'P@ssw0rd1234' into text field 'xpath=//input[@id='basic_confirmPassword']'.</msg>
+<msg time="2025-02-05T14:36:00.730014" level="INFO">Typing text 'P@ssw0rd1234' into text field 'xpath=//input[@id='basic_confirmPassword']'.</msg>
 <arg>${signup_confirm_password_input}</arg>
 <arg>P@ssw0rd1234</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-05T11:43:41.274648" elapsed="0.055553"/>
+<status status="PASS" start="2025-02-05T14:36:00.730014" elapsed="0.057512"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-05T11:43:41.331209" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-primary button-login']'.</msg>
+<msg time="2025-02-05T14:36:00.788550" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-primary button-login']'.</msg>
 <arg>${signup_signup_btn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-05T11:43:41.330201" elapsed="0.036746"/>
+<status status="PASS" start="2025-02-05T14:36:00.788550" elapsed="0.035601"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${signup_signup_successfully}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-05T11:43:41.366947" elapsed="0.214007"/>
+<status status="PASS" start="2025-02-05T14:36:00.825259" elapsed="0.216075"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${signup_signup_successfully_ok}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:01.041334" elapsed="0.010992"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-05T11:43:41.581954" level="INFO">Clicking element 'xpath=//button[@class = 'css-eq3tly ant-btn ant-btn-primary']'.</msg>
+<msg time="2025-02-05T14:36:01.053329" level="INFO">Clicking element 'xpath=//button[@class = 'css-eq3tly ant-btn ant-btn-primary']'.</msg>
 <arg>${signup_signup_successfully_ok}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-05T11:43:41.581954" elapsed="0.033310"/>
+<status status="PASS" start="2025-02-05T14:36:01.053329" elapsed="0.032121"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${human_icon}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-05T11:43:41.615264" elapsed="0.214242"/>
+<status status="PASS" start="2025-02-05T14:36:01.085450" elapsed="0.214312"/>
 </kw>
+<return>
+<value>${username}</value>
+<status status="PASS" start="2025-02-05T14:36:01.299762" elapsed="0.000000"/>
+</return>
 <arg>${random_integer}</arg>
-<status status="PASS" start="2025-02-05T11:43:41.118289" elapsed="0.711217"/>
+<status status="PASS" start="2025-02-05T14:36:00.567424" elapsed="0.732338"/>
 </kw>
-<kw name="Search Product" owner="Addproduct">
+<msg time="2025-02-05T14:36:01.299762" level="INFO">${username} = None</msg>
+<var>${username}</var>
+<arg>${random_integer}</arg>
+<status status="PASS" start="2025-02-05T14:36:00.421265" elapsed="0.878497"/>
+</kw>
+<kw name="Search Product" owner="AddProduct">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${home_searchbar}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-05T11:43:41.830797" elapsed="0.011138"/>
-</kw>
-<kw name="Log To Console" owner="BuiltIn">
-<arg>${product}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" start="2025-02-05T11:43:41.841935" elapsed="0.000000"/>
+<status status="PASS" start="2025-02-05T14:36:01.299762" elapsed="0.011436"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-02-05T11:43:41.841935" level="INFO">Typing text 'phone' into text field 'xpath=//input[@placeholder='input search text']'.</msg>
+<msg time="2025-02-05T14:36:01.312198" level="INFO">Typing text 'phone' into text field 'xpath=//input[@placeholder='input search text']'.</msg>
 <arg>${home_searchbar}</arg>
 <arg>${product}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-05T11:43:41.841935" elapsed="0.041847"/>
+<status status="PASS" start="2025-02-05T14:36:01.311198" elapsed="0.043402"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-05T11:43:41.883782" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-primary ant-input-search-button']'.</msg>
+<msg time="2025-02-05T14:36:01.354600" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-primary ant-input-search-button']'.</msg>
 <arg>${home_search_btn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-05T11:43:41.883782" elapsed="0.163756"/>
+<status status="PASS" start="2025-02-05T14:36:01.354600" elapsed="0.153922"/>
 </kw>
 <arg>product=phone</arg>
-<status status="PASS" start="2025-02-05T11:43:41.829506" elapsed="0.218032"/>
+<status status="PASS" start="2025-02-05T14:36:01.299762" elapsed="0.208760"/>
 </kw>
-<kw name="Add Product to cart" owner="Addproduct">
+<kw name="Add Product to cart" owner="AddProduct">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${search_product_doppee_phone}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-05T11:43:42.048566" elapsed="0.215391"/>
+<status status="PASS" start="2025-02-05T14:36:01.509528" elapsed="0.215946"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-05T11:43:42.265224" level="INFO">Clicking element 'xpath=//*[contains(text(),'Doppee phone')]'.</msg>
+<msg time="2025-02-05T14:36:01.726774" level="INFO">Clicking element 'xpath=//*[contains(text(),'Doppee phone')]'.</msg>
 <arg>${search_product_doppee_phone}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-05T11:43:42.263957" elapsed="0.034044"/>
+<status status="PASS" start="2025-02-05T14:36:01.726774" elapsed="0.059146"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${product_detail_img}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-05T11:43:42.298001" elapsed="0.216261"/>
+<status status="PASS" start="2025-02-05T14:36:01.785920" elapsed="0.217872"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-05T11:43:42.515262" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-primary cart-button']'.</msg>
+<msg time="2025-02-05T14:36:02.003792" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-primary cart-button']'.</msg>
 <arg>${product_add_to_cart}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-05T11:43:42.514262" elapsed="0.036665"/>
+<status status="PASS" start="2025-02-05T14:36:02.003792" elapsed="0.035443"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${product_add_success}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2025-02-05T11:43:42.550927" elapsed="0.011933"/>
+<status status="PASS" start="2025-02-05T14:36:02.039235" elapsed="0.010017"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${product_add_success_ok}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:02.049252" elapsed="0.010435"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-02-05T11:43:42.562860" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-primary']'.</msg>
+<msg time="2025-02-05T14:36:02.060690" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-primary']'.</msg>
 <arg>${product_add_success_ok}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-02-05T11:43:42.562860" elapsed="0.041172"/>
+<status status="PASS" start="2025-02-05T14:36:02.060690" elapsed="0.031298"/>
 </kw>
-<status status="PASS" start="2025-02-05T11:43:42.048566" elapsed="0.555466"/>
+<status status="PASS" start="2025-02-05T14:36:01.509528" elapsed="0.582460"/>
+</kw>
+<kw name="Adding Delivery Info" owner="AddDelivery">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${home_cart_btn}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:02.093063" elapsed="0.010418"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:02.103481" level="INFO">Clicking element 'xpath=//div[@id='app']//span[@aria-label='shopping-cart']'.</msg>
+<arg>${home_cart_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-05T14:36:02.103481" elapsed="0.246939"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${delivery_info_email}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:02.350420" elapsed="0.011555"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-02-05T11:43:47.605308" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-02-05T14:36:07.362245" level="INFO">Slept 5 seconds.</msg>
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-02-05T11:43:42.605037" elapsed="5.000271"/>
+<status status="PASS" start="2025-02-05T14:36:02.361975" elapsed="5.000270"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${delivery_info_name}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.362245" elapsed="0.011482"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${delivery_info_surname}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.373727" elapsed="0.010186"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${delivery_info_ship_address}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.384920" elapsed="0.009806"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${delivery_info_phone}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.394726" elapsed="0.010691"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:07.405417" level="INFO">Typing text 'NowTest' into text field 'xpath=//input[@placeholder='Name']'.</msg>
+<arg>${delivery_info_name}</arg>
+<arg>NowTest</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.405417" elapsed="0.044225"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:07.449642" level="INFO">Typing text 'SurnameTestDelivery' into text field 'xpath=//input[@id='form_item_surName']'.</msg>
+<arg>${delivery_info_surname}</arg>
+<arg>SurnameTestDelivery</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.449642" elapsed="0.061167"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:07.510809" level="INFO">Typing text '99/99 Doppio Village Get better Rd. 9999' into text field 'xpath=//input[@id='form_item_address']'.</msg>
+<arg>${delivery_info_ship_address}</arg>
+<arg>99/99 Doppio Village Get better Rd. 9999</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.510809" elapsed="0.087088"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:07.598902" level="INFO">Typing text '0919198239' into text field 'xpath=//input[@id='form_item_phone']'.</msg>
+<arg>${delivery_info_phone}</arg>
+<arg>0919198239</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.598902" elapsed="0.049463"/>
+</kw>
+<arg>${username}</arg>
+<status status="PASS" start="2025-02-05T14:36:02.093063" elapsed="5.555302"/>
+</kw>
+<kw name="Verified and order" owner="AddDelivery">
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:07.661970" level="INFO">Element 'xpath=//div[1][@class='product-detail-item']' contains text 'Doppee phone'.</msg>
+<arg>${delivery_order_detail_name}</arg>
+<arg>Doppee phone</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.649368" elapsed="0.012602"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:07.671220" level="INFO">Element 'xpath=//div[2][@class='product-detail-item']' contains text '1'.</msg>
+<arg>${delivery_order_detail_qty}</arg>
+<arg>1</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.661970" elapsed="0.009250"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:07.680536" level="INFO">Element 'xpath=//div[3][@class='product-detail-item']' contains text '19980'.</msg>
+<arg>${delviery_order_detail_price}</arg>
+<arg>19980</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.671220" elapsed="0.009316"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:07.680536" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-primary ant-btn-dangerous']'.</msg>
+<arg>${delivery_order_pay_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.680536" elapsed="0.053443"/>
+</kw>
+<status status="PASS" start="2025-02-05T14:36:07.649368" elapsed="0.085613"/>
+</kw>
+<kw name="Payment" owner="Payment">
+<kw name="Select Payment method" owner="Payment">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${paytment_method_next}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.734981" elapsed="0.010940"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:07.756776" level="INFO">Element 'xpath=//div[@class='payment-selection']' contains text 'Select Payment Method'.</msg>
+<arg>${payment_method_msg}</arg>
+<arg>Select Payment Method</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.745921" elapsed="0.010855"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:07.756776" level="INFO">Clicking element 'xpath=//button[@type='button']'.</msg>
+<arg>${paytment_method_next}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.756776" elapsed="0.049254"/>
+</kw>
+<status status="PASS" start="2025-02-05T14:36:07.734981" elapsed="0.071049"/>
+</kw>
+<kw name="Input Card detail" owner="Payment">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-05T14:36:12.806219" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-05T14:36:07.806030" elapsed="5.000189"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${payment_detail_card_nb}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:12.806219" elapsed="0.012134"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${payment_detail_card_exp}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:12.818353" elapsed="0.010316"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${payment_detail_card_cvc}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:12.828669" elapsed="0.010325"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${payment_detail_card_owner}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:12.838994" elapsed="0.009142"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:12.849147" level="INFO">Typing text '4111111111111111' into text field 'xpath=//input[@id='basic_bin']'.</msg>
+<arg>${payment_detail_card_nb}</arg>
+<arg>4111111111111111</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-05T14:36:12.849147" elapsed="0.060016"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:12.909163" level="INFO">Typing text '12/2030' into text field 'xpath=//input[@id='basic_exp']'.</msg>
+<arg>${payment_detail_card_exp}</arg>
+<arg>12/2030</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-05T14:36:12.909163" elapsed="0.046048"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:12.955211" level="INFO">Typing text '133' into text field 'xpath=//input[@id='basic_cvc']'.</msg>
+<arg>${payment_detail_card_cvc}</arg>
+<arg>133</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-05T14:36:12.955211" elapsed="0.041234"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:12.996445" level="INFO">Typing text 'Richy Bois' into text field 'xpath=//input[@id='basic_owner']'.</msg>
+<arg>${payment_detail_card_owner}</arg>
+<arg>Richy Bois</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-05T14:36:12.996445" elapsed="0.051110"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${payment_detail_confirm_btn}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:13.047555" elapsed="0.011666"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:13.059221" level="INFO">Clicking element 'xpath=//button[@type='submit']'.</msg>
+<arg>${payment_detail_confirm_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-05T14:36:13.059221" elapsed="0.044275"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${payment_detail_confirm_ok_btn}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:13.104645" elapsed="0.214989"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:13.319634" level="INFO">Clicking element 'xpath=//button[@class='css-eq3tly ant-btn ant-btn-primary']'.</msg>
+<arg>${payment_detail_confirm_ok_btn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-02-05T14:36:13.319634" elapsed="0.038861"/>
+</kw>
+<status status="PASS" start="2025-02-05T14:36:07.806030" elapsed="5.553479"/>
+</kw>
+<kw name="Payment Success Verified" owner="Payment">
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${payment_success_msg}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-02-05T14:36:13.359509" elapsed="0.011509"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2025-02-05T14:36:13.378291" level="INFO">Element 'xpath=//div[@class='success-title']' contains text 'Payment Complete'.</msg>
+<arg>${payment_success_msg}</arg>
+<arg>Payment Complete</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2025-02-05T14:36:13.371018" elapsed="0.007273"/>
+</kw>
+<status status="PASS" start="2025-02-05T14:36:13.359509" elapsed="0.018782"/>
+</kw>
+<status status="PASS" start="2025-02-05T14:36:07.734981" elapsed="5.643310"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-02-05T14:36:23.379409" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-02-05T14:36:13.378291" elapsed="10.001118"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-02-05T11:43:47.605308" elapsed="2.107217"/>
+<status status="PASS" start="2025-02-05T14:36:23.379409" elapsed="2.096548"/>
 </kw>
 <tag>Assignment</tag>
-<status status="PASS" start="2025-02-05T11:43:29.167393" elapsed="20.545132"/>
+<status status="PASS" start="2025-02-05T14:35:58.477095" elapsed="26.998862"/>
 </test>
-<status status="PASS" start="2025-02-05T11:43:29.004419" elapsed="20.709139"/>
+<status status="PASS" start="2025-02-05T14:35:58.305412" elapsed="27.170545"/>
 </suite>
 <statistics>
 <total>
@@ -202,7 +435,8 @@
 </suite>
 </statistics>
 <errors>
-<msg time="2025-02-05T11:43:29.160395" level="ERROR">Error in file 'C:\Users\UsEr\Documents\GitHub\Nawaphon_automation\import.robot' on line 3: Importing library 'Yaml' failed: ModuleNotFoundError: No module named 'Yaml'
+<msg time="2025-02-05T14:35:58.302250" level="WARN">Error in file 'C:\Users\UsEr\Documents\GitHub\Nawaphon_automation\Testcase\Testcase.robot' on line 1: Singular section headers like '*** Variable ***' are deprecated. Use plural format like '*** Variables ***' instead.</msg>
+<msg time="2025-02-05T14:35:58.468118" level="ERROR">Error in file 'C:\Users\UsEr\Documents\GitHub\Nawaphon_automation\import.robot' on line 3: Importing library 'Yaml' failed: ModuleNotFoundError: No module named 'Yaml'
 Traceback (most recent call last):
   None
 PYTHONPATH:
@@ -212,8 +446,9 @@ PYTHONPATH:
   C:\Users\UsEr\AppData\Local\Programs\Python\Python312\Lib
   C:\Users\UsEr\AppData\Local\Programs\Python\Python312
   C:\Users\UsEr\AppData\Local\Programs\Python\Python312\Lib\site-packages</msg>
-<msg time="2025-02-05T11:43:29.163393" level="WARN">Error in file 'C:\Users\UsEr\Documents\GitHub\Nawaphon_automation\Keyword\Common.robot' on line 12: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-02-05T11:43:29.165393" level="ERROR">Error in file 'C:\Users\UsEr\Documents\GitHub\Nawaphon_automation\import.robot' on line 9: Importing library 'Random' failed: ModuleNotFoundError: No module named 'Random'
+<msg time="2025-02-05T14:35:58.471500" level="WARN">Error in file 'C:\Users\UsEr\Documents\GitHub\Nawaphon_automation\Keyword\Common.robot' on line 12: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-02-05T14:35:58.472853" level="WARN">Error in file 'C:\Users\UsEr\Documents\GitHub\Nawaphon_automation\Keyword\Feature\Register.robot' on line 24: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-02-05T14:35:58.476093" level="ERROR">Error in file 'C:\Users\UsEr\Documents\GitHub\Nawaphon_automation\import.robot' on line 11: Importing library 'Random' failed: ModuleNotFoundError: No module named 'Random'
 Traceback (most recent call last):
   None
 PYTHONPATH:
