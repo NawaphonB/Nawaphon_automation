@@ -1,6 +1,25 @@
+URL:
+  Doppy : https://training-platform.doppio-tech.com/
 
+Credential:
+  username : Nawaphondoppio
+  domain : doppio.com
+  password : P@ssw0rd1234
+Product :
+  name : Phone
+Card:
+  Number : 4111111111111111
+  Expired : 12/2030
+  CVC : 133
+  Owner : Richy Bois
 
-url : https://training-platform.doppio-tech.com/
+Delivery:
+  Name : NowTest
+  Surname : SurnameTestDelivery
+  ShipAddress : 99/99 Doppio Village Get better Rd. 9999
+  PhoneNum : 0919198239
 
-email : test133@doppio.com
-password : P@ssw0rd1234
+Verified_Product:
+  ProductName: Doppee phone
+  Qty: 1
+  Price: 19980
