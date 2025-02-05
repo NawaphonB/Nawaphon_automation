@@ -20,6 +20,15 @@ ${signin_username_input}   xpath=//input[@type='text']
 
 ${signin_password_input}    xpath=//input[@type='password']
 
-${signin_login_input}   xpath=//button[@type='submit']
+${signin_login_btn}   xpath=//button[@type='submit']
 
 ${signin_signup_btn}   xpath=//button[@class='css-eq3tly ant-btn ant-btn-default button-login']
+
+
+#Search product
+${home_searchbar}   xpath=//input[@placeholder='input search text']
+${home_search_btn}  xpath=//button[@class='css-eq3tly ant-btn ant-btn-primary ant-input-search-button']
+
+#View product
+${search_product_doppee_phone}    xpath=//*[contains(text(),'Doppee phone')]
+${product_detail_img}   xpath=//img[@class='ant-image-img']
