@@ -1,7 +1,7 @@
 *** Settings ***
 Resource    ../import.robot
 Test Setup  Open doppy      ${URL.Doppy} 
-Test Teardown   Close Browser
+#Test Teardown   Close Browser
 
 
 

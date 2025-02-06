@@ -12,3 +12,11 @@ ${payment_detail_confirm_btn}   xpath=//button[@type='submit']
 ${payment_detail_confirm_ok_btn}    xpath=//button[@class='css-eq3tly ant-btn ant-btn-primary']
 #Payment Success
 ${payment_success_msg}  xpath=//div[@class='success-title'] 
+
+#Verified Order
+${profile_order_preparing}      xpath=//div[@id='rc-tabs-0-tab-wait for pick and pack']
+${profile_order_pending_payment}    xpath=//div[@id='rc-tabs-4-tab-Order create']
+${profile_order_prep_1st_row}   xpath=//tr[1][@class='ant-table-row ant-table-row-level-0']
+${profile_order_prep_order_id}  xpath=//td[1][@class='ant-table-cell']
+${profile_order_prep_order_status}  xpath=//td[2][@class='ant-table-cell']
+${profile_order_nav_list}   xpath=//div[@class='ant-tabs-nav-list']
