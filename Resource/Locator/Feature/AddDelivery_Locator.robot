@@ -1,5 +1,4 @@
 *** Variables ***
-
 #Delivery Info
 ${home_cart_btn}    xpath=//div[@id='app']//span[@aria-label='shopping-cart']
 ${delivery_info_email}  xpath=//input[@placeholder='Email']

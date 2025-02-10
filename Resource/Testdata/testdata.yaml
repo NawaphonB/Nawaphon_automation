@@ -1,12 +1,12 @@
-URL:
-  Doppy : https://training-platform.doppio-tech.com/
+URL_doppy:  https://training-platform.doppio-tech.com/
 
 Credential:
   username : Nawaphondoppio
   domain : doppio.com
   password : P@ssw0rd1234
-Product :
-  name : Phone
+
+Product_name :  Phone
+
 Card:
   Number : 4111111111111111
   Expired : 12/2030

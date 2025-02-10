@@ -10,6 +10,7 @@ ${payment_detail_card_cvc}  xpath=//input[@id='basic_cvc']
 ${payment_detail_card_owner}    xpath=//input[@id='basic_owner']
 ${payment_detail_confirm_btn}   xpath=//button[@type='submit']
 ${payment_detail_confirm_ok_btn}    xpath=//button[@class='css-eq3tly ant-btn ant-btn-primary']
+
 #Payment Success
 ${payment_success_msg}  xpath=//div[@class='success-title'] 
 

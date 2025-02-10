@@ -1,5 +1,4 @@
 *** Keywords ***
-
 Search Product
     [Arguments]      ${product}
     Wait Until Element Is Enabled   ${home_searchbar}
