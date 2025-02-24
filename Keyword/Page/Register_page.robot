@@ -6,15 +6,19 @@ Go to Register Menu
 
 Generate username
     [Arguments]     ${Username}     ${domain}
-    ${random_integer}=   Random Integer with Python 
-    ${username}=    Set Variable   ${Username}${random_integer}@${domain}
+    ${auto_generate_number}=   Random Integer with Python 
+    ${username}=    Set Variable   ${Username}${auto_generate_number}@${domain}
     RETURN  ${username}
 
-Input username
+Input username from auto generate username function
     ${username}=    Generate username   ${Credential.username}      ${Credential.domain}
     Wait Until Element Is Visible   ${signup_email_input}
     Input Text  ${signup_email_input}    ${username}
 
+Input username
+    [Arguments]     ${username}
+    Wait Until Element Is Visible   ${signup_email_input}
+    Input Text  ${signup_email_input}    ${username}
 Input password
     [Arguments]     ${Password}
     Wait Until Element Is Visible   ${signup_password_input}

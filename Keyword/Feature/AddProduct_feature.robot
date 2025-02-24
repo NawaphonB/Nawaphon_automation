@@ -1,5 +1,5 @@
 *** Keywords ***
 Add product into cart
-    Search Product    ${Product_name}
-    Add Product to cart
+    Product_page.Search Product    ${Product_name}
+    Product_page.Add Product to cart
 

@@ -8,6 +8,6 @@ Generate random number
     Log to console      number is  ${random_number}   
 
 Random Integer with Python
-    ${random_integer}=    Evaluate    random.randint(100, 999)    modules=random
+    ${auto_generate_number}=    Evaluate    random.randint(100, 999)    modules=random
     #Log to console    Random integer between 1 and 100 is: ${random_integer}
-    RETURN      ${random_integer}
+    RETURN      ${auto_generate_number}
